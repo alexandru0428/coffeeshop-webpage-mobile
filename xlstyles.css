@@ -1,0 +1,217 @@
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+    .hideOnMobile {
+        display: flex;
+    }
+    body {
+        background-color: #f8fafc;
+        color: #422006;
+    }
+    main {
+        max-width: 80%;
+        padding-left: 10%;
+    }
+    
+    header {
+        background-color: #f8fafc;
+    }
+    
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: white;
+        box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
+        display: none;
+    }
+    .sidebar ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+    }
+    nav li {
+        padding: 0.5em;
+    }
+    nav li:first-child{
+        margin-right: auto;
+    }
+    
+    nav a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    #greeting {
+        background-image: url(pictures/coffee2.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center center;
+        padding: 2em;
+    }
+    #greetingtext {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: aliceblue;
+        text-align: center;
+        padding: 1em;
+        margin: auto;
+        
+    }
+    #photogreeting {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+    #photogreeting h2{
+        text-align: center;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4) ;
+    }
+    #photogreeting #column {
+        flex: 25%;
+        max-width: 50%;
+        padding: 1em;
+    }
+    #photogreeting #column:last-child img {
+        width: 97.7%;
+    }
+    #menu {
+        background-image: url(pictures/coffee8.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        text-align: center;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5) ;
+        padding: 4em;
+    }
+    #menucover {
+        color:#f8fafc;
+        padding: 1em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #menu button {
+        background-color: burlywood;
+        border: transparent;
+        font-size: 1rem;
+        padding: 1em;
+        border-radius: 1rem;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #about_us {
+        padding: 1em;
+        text-align: center;
+    }
+    
+    #ascontainer1 {
+        text-align: center;
+        background-image: url(pictures/coffee6.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4em;
+    }
+    #ascontainer1 p{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 2em;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    #ascontainer2 {
+        text-align: center;
+        background-image: url(pictures/cofffee7.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4em;
+    }
+    #ascontainer2 p{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 2em;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    #careers {
+        background-image: url(pictures/coffee9.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 1em;
+        color: #f8fafc;
+    }
+    #careerstext {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1em;
+    }
+    #careers label{
+        font-size: 1.1rem;
+        padding: 1em;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5) ;
+    }
+    #careers input{
+        color: #f8fafc;
+        background-color: rgba(80, 80, 80, 0.5);
+        width: 13em;
+        height: 1.5em;
+        font-size: 1rem;
+        border-radius: 1rem;
+        border: solid 1px black;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3) ;
+    }
+    #careers button{
+        color: #f8fafc;
+        background-color: rgba(80, 80, 80, 0.5);
+        width: 8em;
+        height: 1.5em;
+        font-size: 1rem;
+        border-radius: 1rem;
+        border: solid 1px black;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3) ;
+    }
+    #careers input:last-child {
+        background-color: burlywood;
+        color: black;
+        border: 1px black solid;
+        border-radius: 1rem;
+        height: auto;
+        padding: 0.5em;
+        width: 7em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+        border-top: solid black 2px;
+        text-align: center;
+        padding: 1em;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5) ;
+    }
+    footer input{
+        border-radius: 1rem;
+        border: solid 1px black;
+        height: 3vh;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        
+    }
+    footer button {
+        background-color: burlywood;
+        border: 1px black solid;
+        border-radius: 1rem;
+        height: 3vh;
+        width: 15%;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+}
