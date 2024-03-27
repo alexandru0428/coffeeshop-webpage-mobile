@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 to go</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=telma@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="smstyle.css">
+    <link rel="stylesheet" href="mdstyle.css">
+    <link rel="stylesheet" href="lgstyles.css">
+    <link rel="stylesheet" href="xlstyles.css">
+    <link rel="stylesheet" href="xxlstyle.css">
+    <link rel="stylesheet" href="xxxlstyle.css">
+    <link rel="stylesheet" href="xxxxlstyle.css">
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html"  style="font-family: 'Telma', cursive;">5 to go</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about_us">About us</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li onclick=closeSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html"  style="font-family: 'Telma', cursive;">5 to go</a></li>
+                <li class="hideOnMobile" ><a href="#about_us">About us</a></li>
+                <li class="hideOnMobile"><a href="#careers">Careers</a></li>
+                <li class="hideOnMobile"><a href="#menu">Menu</a></li>
+                <li  class="hamburger" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </ul>
+        </nav>
+        <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex';
+
+        }
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ='none';
+        }
+        </script>
+    </header>
+
+    <main>
+        <section id="greeting">
+            <div id="greetingtext">
+                <h2>Hello!</h2>
+                <p>Welcome to our coffee shop - 5 to go - a business born and raised with pride in Romania.</p>
+            </div>
+        </section>
+        <section id="photogreeting">
+
+            <div id="column">
+                <img src="pictures/coffee1.jpg" alt="A guy pouring milk over the coffee cup" width="100%">
+                <h2>Best Coffee</h2>
+                <img src="pictures/coffee4.jpg" alt="Coffe shop" width="100%">
+            </div>
+            <div id="column">
+                <img src="pictures/coffee3.jpg" alt="A coffee cup on the table">
+            </div>
+        </section>
+        <!-- This section was hard! -->
+        <section id="menu">
+            <div id="menucover">
+                <h2>Want to check out our menu?</h2>
+                <button>Click here!</button>
+            </div>
+        </section>
+        <section id="about_us">
+            <h2>Here are some facts about us</h2>
+                <div id="ascontainer1">
+                    <p>High quality coffee beans</p>
+                </div>
+                <div id="ascontainer2">
+                    <p>Very nice interior</p>
+                </div>
+        </section>
+        <section id="careers">
+            <form id="careerstext" action="action_page.php" method="post">
+                <h2>Looking to be a barista at our shop?</h2>
+                <label for="fname">First Name:</label> <br>
+                <input type="text" id="fname" name="fname" required> <br> <br>
+                <label for="lname">Last Name:</label> <br>
+                <input type="text" id="lname" name="lname" required> <br> <br>
+                <label for="email">Email:</label> <br> 
+                <input type="text" id="email" name="email" required> <br> <br>
+                <label for="cv">CV:</label> <br>
+                <button>Submit it here</button> <br> <br> <br>
+                <input type="submit" value="Apply here">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Subscribe for our newsletter!</h3>
+        <input type="text" >
+        <button>Join</button>
+    </footer>
+</body>
+</html>
